@@ -30,10 +30,10 @@ public class MoveTouch : MonoBehaviour
         if(head.position.x!= 0)
         head.position = Vector3.Lerp(head.position, new Vector3(0, 0, head.position.z), 8 * Time.deltaTime);
         if(timF <= 0){
-        
+            
             speed /=3;
             fever = false;
-            scoreAll.fever = false;
+            scoreAll.ResetFever();
             
         }
     }
