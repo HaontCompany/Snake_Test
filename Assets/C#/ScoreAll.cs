@@ -40,6 +40,7 @@ public class ScoreAll : MonoBehaviour
         }
     }
     public void ResetFever(){
+        fever = false;
         crysFever = 0;
         crystal=0;
         crystalT.text = crystal.ToString();
